@@ -4,7 +4,10 @@
 		//- img.neo-logo-main(src='img/slide1.jpg', alt='', style='display: inline;')
 		// КОНЕЦ Контент после загрузки всех картинок, до скролла видео 
 		// ВИДЕО
-		.video-hedgehog.js-video-hedgehog(style='display: block;') 
+		.video-hedgehog.js-video-hedgehog(style='display: block;')
+			.progress-disable
+			.js-progress.progress.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(aria-disabled='false')
+				a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 0%;')
 			ul.js-sequence.sequence(style='top: 0%;') 
 				li(style='background-image: url(photos_min/1.jpg)')
 					i(style='background-image: url(photos/1.jpg)')

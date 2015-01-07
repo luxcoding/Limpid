@@ -6,7 +6,7 @@ head.load(
 	"js/lib/PxLoader.js",
 	"js/lib/jquery.loupe.min.js", 
 	"js/lib/PxLoaderImage.js",
-	// "js/lib/general.js",
+	"js/lib/general.js",
 	"js/lib/slick.js",
 
 
