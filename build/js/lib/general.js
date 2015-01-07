@@ -2,7 +2,7 @@ Ezhi = {}
 
 
 var scrollTop = 0;
-var frames = 179;
+var frames = 379;
 var swipeKd = 0;
 var loader = new PxLoader();
 var highResTimer = setTimeout(function () {
@@ -250,7 +250,6 @@ function scrollImage(dir) {//движение списка с изображен
     if (scrollTop < (frames * -1) + 2) {
         $('.js-video-hedgehog').stop(1, 1).fadeOut(1000, function () {
             $('body').removeClass('overflow');
-            $('.video-descr').css('z-index', '203');
         });
         $('body').removeClass('video');
         $('.js-content-after-video').fadeIn();
