@@ -1,0 +1,995 @@
+@CHARSET "UTF-8";
+
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+}
+
+body.overflow {
+    overflow: hidden;
+}
+
+a {
+    color: #fff;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.video-hedgehog {
+    display: none;
+}
+
+ul.sequence {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ul.sequence li {
+    display: block;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    list-style: none;
+
+}
+
+ul.sequence li i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background: url(../i/back.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+body.video .content {
+    height: 100%;
+}
+
+body.preload .content {
+    background: #fff;
+}
+
+body.video .js-video-slider {
+    display: block;
+}
+
+.js-video-slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+.progress {
+    left: 50%;
+    margin-left: -182px;
+    width: 364px;
+    z-index: 10;
+    position: absolute;
+    background: url('../i/sprite.png') no-repeat -5px -163px;
+    background-size: 396px 200px;
+    border: none;
+    bottom: 30px;
+    display: none;
+}
+
+.progress a.ui-slider-handle {
+    border: none;
+    outline: none;
+    background: url('../i/sprite.png') no-repeat -101px -114px;
+    background-size: 396px 200px;
+    width: 38px;
+    height: 27px;
+    margin-top: -5px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.progress img {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.load-progress {
+    display: none;
+}
+
+.load-progress .loader-filler {
+    width: 135px;
+}
+
+.load-progress .loader-filler {
+    width: 135px;
+}
+
+.loader-mask {
+    width: 212px;
+}
+
+img.neo-logo-main {
+    width: 262px;
+    position: absolute;
+    left: 50%;
+    display: block;
+    z-index: 111;
+    top: 28px;
+    margin-left: -125px;
+    display: none;
+}
+
+body.video .load-progress {
+    display: block;
+    width: 212px;
+    height: 129px;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -202px;
+}
+
+body.video .load-progress img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: block;
+}
+
+.content-after-video {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 115px;
+    display: none;
+}
+
+img.logo {
+    display: block;
+    position: relative;
+    width: 126px;
+    margin: 0 auto;
+}
+
+img.logo.logo-green {
+    z-index: 20;
+    position: absolute;
+    left: 50%;
+    margin-left: -78px;
+    top: 0;
+    width: 166px;
+    display: none;
+}
+
+.use-scroll {
+    position: absolute;
+    width: 400px;
+    height: 45px;
+    text-align: center;
+    z-index: 20;
+    font-size: 14px;
+    color: #231f20;
+    top: 0;
+    left: 50%;
+    margin-left: -188px;
+}
+
+.use-scroll span {
+    background: url('../i/sprite.png') no-repeat -44px -16px;
+    background-size: 396px 200px;
+    width: 52px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -27px;
+    top: 29px;
+}
+
+.content-after-video .text-blocks {
+    margin: 60px auto 0 auto;
+    max-width: 1400px;
+
+}
+
+.content-after-video .text-blocks div {
+    width: 33%;
+    min-width: 295px;
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: center;
+}
+
+.content-after-video .text-blocks div h2 {
+    font-size: 23px;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.content-after-video .text-blocks div p {
+    opacity: 0.6;
+    margin-top: 16px;
+    height: 115px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.content-after-video .text-blocks div a {
+    display: inline-block;
+    padding-top: 65px;
+    position: relative;
+}
+
+.content-after-video .text-blocks div.text-block-one a {
+
+
+}
+
+.content-after-video .text-blocks div.text-block-one a span {
+    display: block;
+    position: absolute;
+    background: url('../i/sprite.png') no-repeat -322px -92px;
+    background-size: 396px 200px;
+    width: 59px;
+    height: 52px;
+    top: 5px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.content-after-video .text-blocks div.text-block-two a {
+
+}
+
+.content-after-video .text-blocks div.text-block-two a span {
+    display: block;
+    position: absolute;
+    background: url('../i/sprite.png') no-repeat -150px -97px;
+    background-size: 396px 200px;
+    width: 63px;
+    height: 46px;
+    top: 10px;
+    left: 50%;
+    margin-left: -32px;
+}
+
+.content-after-video .text-blocks div.text-block-three a {
+}
+
+.content-after-video .text-blocks div.text-block-three a span {
+    display: block;
+    position: absolute;
+    background: url('../i/sprite.png') no-repeat -261px -87px;
+    background-size: 396px 200px;
+    width: 48px;
+    height: 58px;
+    left: 50%;
+    margin-left: -24px;
+    top: 0px
+}
+
+.content-after-video a.redo {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    margin-left: -59px;
+    display: block;
+    width: 118px;
+    height: 65px;
+    text-align: center;
+    opacity: 0.6;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.content-after-video a.redo:hover {
+    opacity: 0.9;
+}
+
+.content-after-video a.redo span {
+    background: url('../i/sprite.png') no-repeat -149px -52px;
+    background-size: 396px 200px;
+    width: 52px;
+    height: 37px;
+    display: block;
+    margin: 10px auto;
+}
+
+a.skip {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    margin-left: -49px;
+    display: block;
+    width: 120px;
+    background-size: 51px 37px;
+    text-align: center;
+    opacity: 0.6;
+    z-index: 10;
+    color: #000;
+    display: none;
+    font-size: 14px;
+}
+
+a.skip:hover {
+    opacity: 1;
+}
+
+body.video a.skip {
+    display: block;
+}
+
+.content-after-video a.address {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    margin-left: 30px;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    opacity: 0.6;
+}
+
+.content-after-video a.address:hover {
+    opacity: 1;
+}
+
+.content-after-video a.address:hover p {
+    text-decoration: none;
+}
+
+.content-after-video address {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    padding: 10px 0 0 50px;
+
+    height: 42px;
+
+}
+
+.content-after-video address span {
+    background: url('../i/sprite.png') no-repeat -224px -106px;
+    background-size: 396px 200px;
+    display: block;
+    position: absolute;
+    width: 29px;
+    height: 38px;
+    top: 11px;
+    left: 0;
+}
+
+.content-after-video address h1 {
+    font-size: 23px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 3px;
+}
+
+.content-after-video .ideolocator {
+    position: absolute;
+    margin-left: 30px;
+    top: 0;
+    left: 0;
+    background: url('../i/sprite.png') no-repeat -224px -106px;
+    background-size: 396px 200px;
+    width: 28px;
+    height: 38px;
+    margin-top: 20px;
+    opacity: 0.6;
+    display: none;
+}
+
+.content-after-video .phone-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 18px;
+    background: url('../i/sprite.png') no-repeat -68px -105px;
+    background-size: 396px 200px;
+    opacity: 0.6;
+    width: 25px;
+    height: 40px;
+    display: none;
+}
+
+.content-after-video address p {
+    text-decoration: underline;
+}
+
+.content-after-video div.contacts {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding-right: 46px;
+    text-align: right;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.content-after-video div.contacts * {
+    opacity: 0.6;
+}
+
+.content-after-video div.contacts *:hover {
+    opacity: 1;
+}
+
+.content-after-video div.contacts bdo {
+    background: url('../i/sprite.png') no-repeat -68px -105px;
+    background-size: 396px 200px;
+    width: 23px;
+    height: 37px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.content-after-video div.contacts bdo:hover {
+    opacity: 0.6;
+}
+
+
+.content-after-video div.contacts a {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.content-after-video div.contacts span {
+    display: inline-block;
+    border-bottom: 1px dashed;
+    cursor: pointer;
+    margin-top: 3px;
+    height: 16px;
+}
+
+.content-after-video div.contacts p {
+    margin-bottom: 5px;
+    display: none;
+}
+
+.content-after-video div.contacts .hidden {
+    opacity: 1;
+    display: none;
+}
+
+.content-after-video div.contacts .hidden a {
+    margin-top: 10px;
+}
+
+.popup {
+    top: 0;
+    left: 0;
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    display: none;
+}
+
+.content-after-video .popup.gallery .photos h2 {
+    font-size: 22px;
+    color: #5fa1d7;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 7.5%;
+
+}
+
+.content-after-video .popup.gallery .photos p {
+    color: #8f8f8f;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 20px 7.5% 20px 7.5%;
+}
+
+.content-after-video .popup.gallery .photos li img {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+.content-after-video .popup.gallery .photos li {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.content-after-video .popup.gallery .mini-photos {
+    position: absolute;
+    bottom: 100px;
+    left: 7.5%;
+}
+
+.content-after-video .popup.gallery .mini-photos li {
+    display: inline-block;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 51px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.content-after-video .popup.gallery .mini-photos li a {
+    display: block;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 51px;
+}
+
+.content-after-video .popup.gallery .mini-photos li p {
+    color: #8f8f8f;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.content-after-video .popup.gallery .mini-photos li.active a {
+    background-position: 0 -53px;
+}
+
+.content-after-video .popup.gallery .mini-photos li.active p {
+    color: #5fa1d7;
+}
+
+.content-after-video .popup.gallery .mini-photos li:hover a {
+    background-position: 0 -53px;
+}
+
+.content-after-video .popup.gallery .mini-photos li:hover p {
+    color: #5fa1d7;
+}
+
+.content-after-video .popup .close {
+    background: url('../i/sprite.png') no-repeat -3px -20px;
+    background-size: 396px 200px;
+    width: 19px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 4%;
+    z-index: 10;
+}
+.content-after-video .popup .close:hover {
+    background-position: -3px -2px;
+}
+
+
+.content-after-video .popup.gallery .nav {
+    width: 15px;
+    height: 27px;
+    position: absolute;
+    top: 44%;
+    margin-bottom: -13px;
+    display: block;
+    background-position: 0 0;
+    z-index: 10;
+}
+
+.content-after-video .popup.gallery .nav.nav-right {
+    background: url('../i/sprite.png') no-repeat -70px -44px;
+    background-size: 396px 200px;
+    right: 4%;
+}
+
+.content-after-video .popup.gallery .nav.nav-right:hover {
+    background: url('../i/sprite.png') no-repeat -70px -71px;
+    background-size: 396px 200px;
+}
+
+.content-after-video .popup.gallery .nav.nav-left {
+    background: url('../i/sprite.png') no-repeat -95px -44px;
+    background-size: 396px 200px;
+    left: 4%;
+}
+
+.content-after-video .popup.gallery .nav.nav-left:hover {
+    background: url('../i/sprite.png') no-repeat -95px -71px;
+    background-size: 396px 200px;
+}
+
+
+
+.content-after-video .popup.gallery.photo-gallery .mini-photos li a {
+    opacity: 0.5;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all .2s;
+}
+
+.content-after-video .popup.gallery.photo-gallery .mini-photos li:hover a {
+    background-position: 0 0;
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.content-after-video .popup.gallery.photo-gallery .mini-photos li.active a {
+    background-position: 0 0;
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.content-after-video .plan-gallery {
+
+}
+
+.content-after-video .plan-gallery .sun {
+    background: url('../i/sprite.png') no-repeat -3px -45px;
+    background-size: 396px 200px;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    z-index: 20;
+    right: 150px;
+    top: 50px;
+}
+
+.content-after-video .popup.gallery .photos li {
+    width: 100%;
+}
+
+footer {
+    position: relative;
+    background: none;
+    height: 40px;
+    margin-top: -40px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+footer div.right {
+    float: right;
+    opacity: 0.6;
+    margin-right: 30px;
+}
+
+footer div.right img {
+    width: 111px;
+    height: 13px;
+}
+
+footer div.left {
+    opacity: 0.6;
+    float: left;
+    margin-left: 30px;
+    font-size: 12px;
+    padding-top: 2px;
+    border-bottom: 1px dashed #fff;
+    cursor: pointer;
+    height: 16px;
+}
+
+footer div.left:hover {
+    opacity: 1;
+    border-bottom: none;
+}
+
+@media handheld, only screen and (max-width: 970px) {
+    .content-after-video {
+        padding-top: 120px !important;
+    }
+
+    .content-after-video .ideolocator, .content-after-video .phone-icon {
+        display: block;
+    }
+
+    .content-after-video .text-blocks {
+        margin-top: 110px;
+    }
+
+    .content-after-video .text-blocks div {
+        display: block;
+        margin: 0 auto 90px auto;
+    }
+
+    .content-after-video .text-blocks div p {
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .content-after-video a.address {
+        position: relative;
+        margin-top: 230px;
+    }
+
+    .content-after-video div.contacts {
+        position: relative;
+        right: auto;
+        text-align: left;
+        padding-left: 46px;
+        margin-left: 30px;
+        background-position: 3px 3px;
+        margin-bottom: 30px;
+    }
+
+    .content-after-video div.contacts span {
+        display: none;
+    }
+
+    .content-after-video div.contacts .hidden {
+        display: block;
+    }
+
+    .content-after-video a.redo {
+        bottom: 470px;
+    }
+
+    .content-after-video div.contacts p {
+        display: block;
+    }
+
+    body {
+        line-height: 20px;
+    }
+
+    .logo-green {
+        margin-top: 50px !important;
+    }
+
+    .use-scroll {
+        margin-top: 0 !important;
+        bottom: 80px;
+        top: auto;
+        margin-left: -190px;
+    }
+
+    .progress {
+        bottom: 30px;
+        width: 250px;
+        left: 50%;
+        margin-left: -125px;
+        background-size: 250px;
+    }
+
+    .content-after-video div.contacts {
+        margin-right: 0;
+    }
+
+    .load-progress {
+        margin-top: 50px !important;
+        top: 0 !important;
+
+    }
+
+    body.video footer {
+        display: none;
+    }
+
+    .content-after-video .plan-gallery {
+        background-image: none;
+    }
+
+    .content-after-video .popup.gallery .mini-photos li {
+        margin-right: 5px;
+    }
+
+    .content-after-video .popup.gallery .nav {
+        display: none;
+    }
+
+    .content-after-video .popup.gallery .mini-photos {
+        bottom: auto;
+        top: 240px;
+    }
+
+    .content-after-video .popup.gallery .photos li img {
+        margin-top: 20px !important;
+    }
+
+    a.skip {
+        bottom: 25px;
+        padding-top: 40px;
+        height: 20px;
+        background-position: center top;
+    }
+
+    .content-after-video .plan-gallery .sun {
+        right: 40px;
+        top: 60px;
+        background-size: 40px;
+    }
+
+    .progress-disable {
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        z-index: 30;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -150px;
+        display: none;
+
+    }
+
+    .content-after-video .popup.gallery .photos li {
+        position: relative;
+    }
+
+    .content-after-video .popup.gallery .mini-photos {
+        position: relative;
+        top: 20px;
+        left: 20px;        
+	display: inline-block;
+    }
+    .loupe {
+        display: none !important;
+    }
+    img.neo-logo-main {
+        margin-top: 0 !important;
+        margin-left: -132px;
+    }
+    body.video .load-progress {
+        margin-top: 0 !important;
+        margin-left: -209px;
+    }
+
+    .content-after-video div.contacts bdo {
+        right: auto;
+        left: 0;
+    }
+	
+    .content-after-video .popup.gallery .photos h2 {
+	margin-top: 43px;
+    }
+
+    
+
+}
+
+@media handheld, only screen and (min-width: 1921px) {
+    img.logo.logo-green {
+        width: 220px;
+        margin-left: -106px;
+    }
+
+    .content-after-video img.logo {
+        width: 190px;
+    }
+
+    .content-after-video .text-blocks div h2 {
+        font-size: 33px;
+    }
+
+    .content-after-video .text-blocks div p {
+        font-size: 21px;
+        line-height: 120%;
+        height: 155px;
+    }
+
+    .content-after-video .text-blocks div.text-block-one a span{
+        background: url('../i/sprite.png') no-repeat -357px -102px;
+        background-size: 440px;
+        width: 68px;
+        height: 68px;
+        margin-left: -34px;
+    }
+
+    .content-after-video .text-blocks div.text-block-two a span{
+        background: url('../i/sprite.png') no-repeat -166px -101px;
+        background-size: 440px;
+        width: 72px;
+        height: 68px;
+        margin-left: -36px;
+    }
+
+    .content-after-video .text-blocks div.text-block-three a span{
+        background: url('../i/sprite.png') no-repeat -289px -96px;
+        background-size: 440px;
+        width: 56px;
+        height: 68px;
+        margin-left: -23px;
+    }
+
+    .content-after-video .text-blocks div a {
+        padding-top: 105px;
+        font-size: 21px;
+    }
+
+    body.video .load-progress {
+        margin-left: -244px;
+        top: -6px;
+    }
+
+    .load-progress .loader-filler {
+        width: 161px;
+    }
+
+    .loader-mask {
+        width: 252px;
+    }
+
+
+    .loupe {
+        display: none !important;
+    }
+
+    .content-after-video .popup.gallery .photos li img {
+        width: 85%;
+    }
+
+    img.neo-logo-main {
+        width: 312px;
+        margin-left: -153px;
+    }
+
+}
+
+.loupe {
+    background-color: #555;
+    background: rgba(0, 0, 0, 0.25);
+    border: 5px solid rgba(0, 0, 0, 0);
+    cursor: url(../i/blank.png), url(../i/blank.cur), none;
+    z-index: 20;
+}
+
+.neo-logo {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    overflow: hidden;
+    width: 196px;
+    height: 112px;
+    display: none;
+    cursor: pointer;
+}
+
+.neo-logo img {
+    position: absolute;
+    left:0;
+    top:112px;
+    width: 196px;
+    display: block;
+}
+
+
+body.popup-open img.logo{
+	display: none;
+}
+
+body.popup-open .content-after-video .text-blocks {
+	display: none;
+}
+
+body.popup-open .content-after-video a.address{
+	display: none;
+}
+
+body.popup-open .content-after-video div.contacts {
+	display:none;
+}
+
+
