@@ -9,9 +9,6 @@
     <meta content="telephone=no" name="format-detection">
     <meta name="viewport" content="width=device-width">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic-ext,cyrillic" rel="stylesheet" type="text/css">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   </head>
@@ -32,7 +29,9 @@
           <!-- Контент после загрузки всех картинок, до скролла видео-->
           <!-- КОНЕЦ Контент после загрузки всех картинок, до скролла видео -->
           <!-- ВИДЕО-->
-          <div style="display: block;" class="video-hedgehog js-video-hedgehog"> 
+          <div style="display: block;" class="video-hedgehog js-video-hedgehog">
+            <div class="progress-disable"></div>
+            <div aria-disabled="false" class="js-progress progress ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><a href="#" style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all"></a></div>
             <ul style="top: 0%;" class="js-sequence sequence"> 
               <li style="background-image: url(photos_min/1.jpg)"><i style="background-image: url(photos/1.jpg)"></i></li>
               <li style="background-image: url(photos_min/2.jpg)"></li>
