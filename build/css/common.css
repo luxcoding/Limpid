@@ -527,7 +527,7 @@ body.video .js-video-slider {
   width: 364px;
   z-index: 10;
   position: absolute;
-  background: url('../i/sprite.png') no-repeat -5px -163px;
+  background: url('../assets/i/sprite.png') no-repeat -5px -163px;
   background-size: 396px 200px;
   border: none;
   bottom: 30px;
@@ -537,7 +537,7 @@ body.video .js-video-slider {
 .progress a.ui-slider-handle {
   border: none;
   outline: none;
-  background: url('../i/sprite.png') no-repeat -101px -114px;
+  background: url('../assets/i/sprite.png') no-repeat -101px -114px;
   background-size: 396px 200px;
   width: 38px;
   height: 27px;
@@ -636,7 +636,7 @@ img.logo.logo-green {
 }
 
 .use-scroll span {
-  background: url('../i/sprite.png') no-repeat -44px -16px;
+  background: url('../assets/i/sprite.png') no-repeat -44px -16px;
   background-size: 396px 200px;
   width: 52px;
   height: 11px;
@@ -683,7 +683,7 @@ img.logo.logo-green {
 .content-after-video .text-blocks div.text-block-one a span {
   display: block;
   position: absolute;
-  background: url('../i/sprite.png') no-repeat -322px -92px;
+  background: url('../assets/i/sprite.png') no-repeat -322px -92px;
   background-size: 396px 200px;
   width: 59px;
   height: 52px;
@@ -695,7 +695,7 @@ img.logo.logo-green {
 .content-after-video .text-blocks div.text-block-two a span {
   display: block;
   position: absolute;
-  background: url('../i/sprite.png') no-repeat -150px -97px;
+  background: url('../assets/i/sprite.png') no-repeat -150px -97px;
   background-size: 396px 200px;
   width: 63px;
   height: 46px;
@@ -707,7 +707,7 @@ img.logo.logo-green {
 .content-after-video .text-blocks div.text-block-three a span {
   display: block;
   position: absolute;
-  background: url('../i/sprite.png') no-repeat -261px -87px;
+  background: url('../assets/i/sprite.png') no-repeat -261px -87px;
   background-size: 396px 200px;
   width: 48px;
   height: 58px;
@@ -734,7 +734,7 @@ img.logo.logo-green {
 }
 
 .content-after-video a.redo span {
-  background: url('../i/sprite.png') no-repeat -149px -52px;
+  background: url('../assets/i/sprite.png') no-repeat -149px -52px;
   background-size: 396px 200px;
   width: 52px;
   height: 37px;
@@ -792,7 +792,7 @@ body.video a.skip {
 }
 
 .content-after-video address span {
-  background: url('../i/sprite.png') no-repeat -224px -106px;
+  background: url('../assets/i/sprite.png') no-repeat -224px -106px;
   background-size: 396px 200px;
   display: block;
   position: absolute;
@@ -814,7 +814,7 @@ body.video a.skip {
   margin-left: 30px;
   top: 0;
   left: 0;
-  background: url('../i/sprite.png') no-repeat -224px -106px;
+  background: url('../assets/i/sprite.png') no-repeat -224px -106px;
   background-size: 396px 200px;
   width: 28px;
   height: 38px;
@@ -829,7 +829,7 @@ body.video a.skip {
   right: 0;
   margin-right: 30px;
   margin-top: 18px;
-  background: url('../i/sprite.png') no-repeat -68px -105px;
+  background: url('../assets/i/sprite.png') no-repeat -68px -105px;
   background-size: 396px 200px;
   opacity: 0.6;
   width: 25px;
@@ -861,7 +861,7 @@ body.video a.skip {
 }
 
 .content-after-video div.contacts bdo {
-  background: url('../i/sprite.png') no-repeat -68px -105px;
+  background: url('../assets/i/sprite.png') no-repeat -68px -105px;
   background-size: 396px 200px;
   width: 23px;
   height: 37px;
@@ -983,7 +983,7 @@ body.video a.skip {
 }
 
 .content-after-video .popup .close {
-  background: url('../i/sprite.png') no-repeat -3px -20px;
+  background: url('../assets/i/sprite.png') no-repeat -3px -20px;
   background-size: 396px 200px;
   width: 19px;
   height: 19px;
@@ -1010,24 +1010,24 @@ body.video a.skip {
 }
 
 .content-after-video .popup.gallery .nav.nav-right {
-  background: url('../i/sprite.png') no-repeat -70px -44px;
+  background: url('../assets/i/sprite.png') no-repeat -70px -44px;
   background-size: 396px 200px;
   right: 4%;
 }
 
 .content-after-video .popup.gallery .nav.nav-right:hover {
-  background: url('../i/sprite.png') no-repeat -70px -71px;
+  background: url('../assets/i/sprite.png') no-repeat -70px -71px;
   background-size: 396px 200px;
 }
 
 .content-after-video .popup.gallery .nav.nav-left {
-  background: url('../i/sprite.png') no-repeat -95px -44px;
+  background: url('../assets/i/sprite.png') no-repeat -95px -44px;
   background-size: 396px 200px;
   left: 4%;
 }
 
 .content-after-video .popup.gallery .nav.nav-left:hover {
-  background: url('../i/sprite.png') no-repeat -95px -71px;
+  background: url('../assets/i/sprite.png') no-repeat -95px -71px;
   background-size: 396px 200px;
 }
 
@@ -1048,7 +1048,7 @@ body.video a.skip {
 }
 
 .content-after-video .plan-gallery .sun {
-  background: url('../i/sprite.png') no-repeat -3px -45px;
+  background: url('../assets/i/sprite.png') no-repeat -3px -45px;
   background-size: 396px 200px;
   width: 56px;
   height: 56px;
@@ -1288,7 +1288,7 @@ footer div.left:hover {
   }
 
   .content-after-video .text-blocks div.text-block-one a span {
-    background: url('../i/sprite.png') no-repeat -357px -102px;
+    background: url('../assets/i/sprite.png') no-repeat -357px -102px;
     background-size: 440px;
     width: 68px;
     height: 68px;
@@ -1296,7 +1296,7 @@ footer div.left:hover {
   }
 
   .content-after-video .text-blocks div.text-block-two a span {
-    background: url('../i/sprite.png') no-repeat -166px -101px;
+    background: url('../assets/i/sprite.png') no-repeat -166px -101px;
     background-size: 440px;
     width: 72px;
     height: 68px;
@@ -1304,7 +1304,7 @@ footer div.left:hover {
   }
 
   .content-after-video .text-blocks div.text-block-three a span {
-    background: url('../i/sprite.png') no-repeat -289px -96px;
+    background: url('../assets/i/sprite.png') no-repeat -289px -96px;
     background-size: 440px;
     width: 56px;
     height: 68px;
@@ -1347,7 +1347,7 @@ footer div.left:hover {
   background-color: #555;
   background: rgba(0, 0, 0, 0.25);
   border: 5px solid rgba(0, 0, 0, 0);
-  cursor: url(../i/blank.png), url(../i/blank.cur), none;
+  cursor: url(../assets/i/blank.png), url(../assets/i/blank.cur), none;
   z-index: 20;
 }
 
