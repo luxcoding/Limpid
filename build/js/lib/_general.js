@@ -2,7 +2,7 @@ Ezhi = {}
 
 
 var scrollTop = 0;
-var frames = 379;
+var frames = 179;
 var swipeKd = 0;
 var loader = new PxLoader();
 var highResTimer = setTimeout(function () {
