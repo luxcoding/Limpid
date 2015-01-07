@@ -700,19 +700,28 @@ i.img42
 			right: 215px
 			
 +r(500px)
-	.js-video-slider
-		height: 430px
-		// overflow: hidden
-	.section
-		height: 100%
-		min-height: 100%
-	.section2
-		height: 550px
 	body
 		height: auto
 		&.overflow
 			overflow-y: hidden !important
 			overflow-x: hidden !important
+		&.video
+			.js-video-slider
+				display: none
+	.js-video-slider
+		// height: 430px
+		// overflow: hidden
+	.section
+		height: 100%
+		min-height: 100%
+	#section0
+		height: 430px
+	#section4
+		height: 610px
+	.section2
+		height: 550px
+	
+
 
 +r(480px)
 	.video-descr
