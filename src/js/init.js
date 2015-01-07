@@ -4,7 +4,7 @@ head.load(
 	"js/lib/jquery.event.move.js",
 	"js/lib/jquery-ui-1.10.4.min.js",
 	"js/lib/PxLoader.js",
-	"js/lib/jquery.loupe.min.js",
+	"js/lib/jquery.loupe.min.js", 
 	"js/lib/PxLoaderImage.js",
 	"js/lib/general.js",
 	"js/lib/slick.js",

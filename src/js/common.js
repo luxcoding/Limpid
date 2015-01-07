@@ -6,14 +6,14 @@ head.ready(function() {
       var pepe = $.fn.fullpage({
         slidesColor: ['#fff', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', 'lastPage'],
-        menu: '#menu'
+        menu: '#menu' 
       });
     }
     if ($(window).width() < 960) {
       var pepe = $.fn.fullpage({
         slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', 'lastPage'],
-        menu: '#menu',
+        menu: '#menu', 
         autoScrolling: false
       });
     }
