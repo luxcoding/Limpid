@@ -1,0 +1,225 @@
+- var titleMod = { title: 'main' }; 
+- var session = { locale: '' }
+
+doctype html
+
+html
+  include includes/head.jade
+  body.video.overflow(scroll="no")
+    #menu-wrap
+      a(href="#").logo
+      ul#menu
+        li(data-menuanchor='firstPage')
+          a(href='#firstPage') О компании
+        li(data-menuanchor='secondPage')
+          a(href='#secondPage') Проектирование и дизайн
+        li(data-menuanchor='3rdPage')
+          a(href='#3rdPage') Бассейны
+        li(data-menuanchor='4rdPage')
+          a(href='#4rdPage') Сауны и хаммамы
+        li(data-menuanchor='lastPage')
+          a(href='#lastPage') Сервис
+      .tel +7 (861) 234-09-98
+    #section0.section
+      include includes/slide1.jade  
+    #section1.section
+      .section2
+        .section2-media(style='background-image: url(img/slide2.jpg);').js-section-height
+        .section2-media-mobile(style='background-image: url(img/slide2-mobile.jpg);').js-section-height
+        .section2-descr
+          .section2-descr-title
+            | бассейны<br>
+            | обслуживают<br>
+            | себя сами
+          .section2-descr-note
+            | Благодаря встроенным<br> 
+            | запатентованным системам <br>
+            | регулярный сервис не требуется.
+    #section2.section
+      .section3
+        .wrap-table
+          .wrap-table-cell
+            .tab.js-tab-group
+              ul.tab__nav.js-tab
+                li
+                  a.tab__link(href='js-tab1')
+                    .tab__link-title Естественная <br>очистка
+                    .tab__link-descr Система Vantage создана для того, чтобы вы забыли об еженедельной чистке донным пылесосом и промывке фильтра.
+                    .tab__link-mobile
+                      .tab__link-mobile-media
+                        img(src="img/img10-m.png", alt="")
+                      ul.tab__link-mobile-list
+                        li
+                          i.img11
+                          p Технология предотвращает появление бактерийи водорослей.
+                        li
+                          i.img12
+                          p Vantage поднимает на поверхность остывшую воду, помогая ей нагреться.
+                li
+                  a.tab__link(href='js-tab2')
+                    .tab__link-title Прозрачная вода <br>без хлора
+                    .tab__link-descr Основанная на процессах гидролиза и ионизации серебром и медью, система Aquascenic позволит вам всегда наслаждаться идеально чистой водой.
+                    .tab__link-mobile
+                      .tab__link-mobile-media
+                        img(src="img/img20-m.png", alt="")
+                      ul.tab__link-mobile-list
+                        li
+                          i.img21
+                          p Похожий метод используется при обработке питьевой воды.
+                        li
+                          i.img22
+                          p Система управляется дистанционно с помощью пульта.
+                li
+                  a.tab__link(href='js-tab3')
+                    .tab__link-title Не скользит <br>и не пачкается
+                    .tab__link-descr Поверхность Slipstop, покрывающая не только бортики, но также ступени и дно, дает ощущение комфорта и безопасности в любой зоне бассейна.
+                    .tab__link-mobile
+                      .tab__link-mobile-media
+                        img(src="img/img30-m.png", alt="")
+                      ul.tab__link-mobile-list
+                        li
+                          i.img31
+                          p Похожий метод используется при обработке питьевой воды.
+                        li
+                          i.img32
+                          p Система управляется дистанционно с помощью пульта.
+                li
+                  a.tab__link(href='js-tab4')
+                    .tab__link-title Максимальное <br>энергосбережение
+                    .tab__link-descr Технология винил-керамики на основе порошка из полых микросфер Ceramic Core делает бассейн долговечней и теплее. Ресурсы на искусственный подогрев бассейна не расходуются.
+                    .tab__link-mobile
+                      .tab__link-mobile-media
+                        img(src="img/img40-m.png", alt="")
+                      ul.tab__link-mobile-list
+                        li
+                          i.img41
+                          p Из полостей микросфер почти полностью выжигается воздух. Это защищает керамику от влияния окружающей среды.
+                        li
+                          i.img42
+                          p Бассейн живёт дольше. Со временем на его поверхности не появляются разводы и бурые пятна.
+              .tab__content
+                .tab__item.js-tab-cont.js-tab1
+                  .tab__content-media
+                    img(src="img/img10.png", alt="")
+                  ul.tab__content-descr
+                    li
+                      i.img31
+                      p Поверхность состоит из мельчайших гранул, в которые не забивается грязь.
+                    li
+                      i.img32
+                      p Slipstop практически незаметна под водой.
+                .tab__item.js-tab-cont.js-tab2
+                  .tab__content-media
+                    img(src="img/img20.png", alt="")
+                  ul.tab__content-descr
+                    li
+                      i.img21
+                      p Похожий метод используется при обработке питьевой воды.
+                    li
+                      i.img22
+                      p Система управляется дистанционно с помощью пульта.
+                .tab__item.js-tab-cont.js-tab3
+                  .tab__content-media
+                    img(src="img/img30.png", alt="")
+                  ul.tab__content-descr
+                    li
+                      i.img31
+                      p Поверхность состоит из мельчайших гранул, в которые не забивается грязь.
+                    li
+                      i.img32
+                      p Slipstop практически незаметна под водой.
+                .tab__item.js-tab-cont.js-tab4
+                  .tab__content-media
+                    img(src="img/img40.png", alt="")
+                  ul.tab__content-descr
+                    li
+                      i.img41
+                      p Из полостей микросфер почти полностью выжигается воздух. Это защищает керамику от влияния окружающей среды.
+                    li
+                      i.img42
+                      p Бассейн живёт дольше. Со временем на его поверхности не появляются разводы и бурые пятна.
+    #section3.section
+      .covering
+        .covering-media
+          .js-covering-media-1.covering-media-img(style='background-image: url(img/slide4.jpg);')
+          .js-covering-media-2.covering-media-img(style='background-image: url(img/slide4.jpg); display: none;')
+          .js-covering-media-3.covering-media-img(style='background-image: url(img/slide4.jpg); display: none;')
+          .covering-media-descr
+            .covering-media-descr-title Больше, <br>чем просто украшение
+            .covering-media-descr-content Чтобы поверхность бассейна не потускнела и не потрескалась на солнце, на неё вручную наносится покрытие Bi-iluminate. Похожую технологию применяют при окраске дорогих автомобилей.
+        .covering-note Подберите покрытие:
+        ul.covering-list
+          li.js-covering-list-1.covering-list-item.is-active
+            i.covering-list-first
+            span.covering-list-title NOVA Pearl
+          li.js-covering-list-2.covering-list-item
+            i.covering-list-second
+            span.covering-list-title Blue saphire
+          li.js-covering-list-3.covering-list-item
+            i.covering-list-third
+            span.covering-list-title Smokey quartz
+    #section4.section
+      .bowls
+        .bowls-descr
+          .bowls-descr-title осталось только выбрать
+          .bowls-descr-content 
+            | Пять чаш — это пять готовых решений для вашего бассейна.
+            | Подберите то, которое подойдёт именно вам.
+        .bowls-note
+          p * минимальный
+          p размер чаши
+        .wrap-table
+          .wrap-table-cell
+            .bowls-media
+              .bowls-media-item.bowls-media-riverina(style='background-image: url(img/slide5-riverina.jpg);')
+              .bowls-media-item.bowls-media-xtrainer(style='background-image: url(img/slide5-xtrainer.jpg);')
+              .bowls-media-item.bowls-media-java(style='background-image: url(img/slide5-java.jpg);')
+              .bowls-media-item.bowls-media-vogue(style='background-image: url(img/slide5-vogue.jpg);')
+              .bowls-media-item.bowls-media-briliant.is-active(style='background-image: url(img/slide5-briliant.jpg);')
+            .bowls-items.responsive
+              .bowls-item.m-riverina
+                .bowls-item-name riverina
+                .bowls-item-media
+                .bowls-item-btn
+              .bowls-item.m-xtrainer
+                .bowls-item-name xtrainer
+                .bowls-item-media
+                .bowls-item-btn
+              .bowls-item.m-java
+                .bowls-item-name java
+                .bowls-item-media
+                .bowls-item-btn
+              .bowls-item.m-vogue
+                .bowls-item-name vogue
+                .bowls-item-media
+                .bowls-item-btn
+              .bowls-item.m-briliant.is-active
+                .bowls-item-name briliant
+                .bowls-item-media
+                .bowls-item-btn
+            .bowls-dotted
+            .contact
+              .contact-in
+                .wrap-table
+                  .wrap-table-cell
+                    .contact-title Оставьте заявку
+                    .contact-note
+                      p И мы поможем вам определиться
+                      p с выбором бассейна.
+                    .contact-input-wrap
+                      input.contact-input(type="text", placeholder="Имя")
+                    .contact-input-wrap
+                      input.contact-input(type="text", placeholder="Телефон")
+                    a.contact-btn(href="#") Отправить
+                    .contact-tel +7 (861) 203-45-71
+              .footer
+                i.footer-mobile-logo
+                ul.social
+                  li.social-item
+                    a.social-link(href="#") facebook
+                  li.social-item
+                    a.social-link(href="#") instagram
+                  li.social-item
+                    a.social-link(href="#") youtube
+                a.footer-dev(href="#") rutorika
+    script(data-headjs-load='js/init.js', src='js/lib/head.js') 

@@ -1,0 +1,738 @@
+// VAR
+// ===============================================
+$default-transition-duration: 0.2s
+$black: #232324
+%wrap
+	width: 940px
+	padding: 0 10px
+	margin-left: auto
+	margin-right: auto 
+%wrap-small 
+	width: 820px
+	padding: 0 60px
+	margin-left: auto
+	margin-right: auto
+
+.js-video-slider
+	z-index: 103
+	
+#section4, #section3, #section2, #section1
+	z-index: 1234
+//	GENERAL
+// ===============================================
+body
+	font-family:  Helvetica, "Trebuchet MS", Arial, sans-serif
+	font-size: 14px 
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: antialiased
+
+#menu-wrap
+	background: #fff
+
+.logo
+	margin-left: 12px
+	display: inline-block
+	vertical-align: middle
+	+s($s-logo)
+
+i.img11, i.img12, i.img21, i.img22, i.img31, i.img32, i.img41, i.img42
+	display: inline-block
+	vertical-align: middle
+i.img11
+	+s($s-img11)
+i.img12
+	+s($s-img12) 
+i.img21
+	+s($s-img21)
+i.img22
+	+s($s-img22)
+i.img31
+	+s($s-img31)
+i.img32
+	+s($s-img32)
+i.img41
+	+s($s-img41)
+i.img42
+	+s($s-img42)
+
+// SECTION 2
+// ===============================================
+.section2
+	position: relative
+	.section2-media
+		width: 100%
+		height: 100%
+		padding-top: 160px
+		+cover
+	.section2-media-mobile
+		display: none
+		width: 100%
+		height: 100%
+		padding-top: 0px
+		+cover
+	.section2-descr
+		width: 370px
+		position: absolute
+		left: 100px
+		bottom: 100px
+		z-index: 666
+
+		color: #FFF
+		text-align: left
+		.section2-descr-title
+			margin-bottom: 10px
+			font-size: 30px
+			font-weight: 100
+			text-transform: uppercase
+		.section2-descr-note
+			font-size: 18px
+			font-weight: 100
+
+.wrap-table
+	width: 100%
+	height: 100%
+	display: table
+	.wrap-table-cell
+		display: table-cell
+		vertical-align: middle
+// SECTION 3
+// ===============================================
+.section3
+	height: 100%
+	background: linear-gradient(139deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 18%,rgba(244,244,244,1) 18%,rgba(244,244,244,1) 86%,rgba(244,244,244,1) 86%,rgba(255,255,255,1) 86%)
+.tab
+	width: 960px
+	margin: 0 auto
+	display: table
+	padding-top: 66px
+	text-align: left
+	.tab__nav
+		width: 330px
+		display: table-cell
+		vertical-align: middle
+		li
+			&.is-active
+				.tab__link-descr
+					display: block
+				.tab__link-title
+					&:before
+						+s($s-arr-active)
+				.tab__link-title
+					color: #028cd2 
+		a
+			margin-bottom: 30px
+			display: block
+			text-decoration: none
+		.tab__link-mobile
+			display: none
+			margin-left: 48px
+			margin-top: 15px
+			.tab__link-mobile-media
+				display: block
+				margin-bottom: 15px
+			.tab__link-mobile-list
+				li
+					margin-bottom: 15px
+					font-size: 12px
+					color: #666
+					i
+						margin-right: 8px
+					p
+						width: 230px
+						display: inline-block
+						vertical-align: middle
+		.tab__link-title
+			padding-left: 48px
+			margin-right: 15px
+			margin-bottom: 15px
+			display: inline-block
+			vertical-align: middle
+			font-size: 24px
+			font-weight: 300 
+			color: #666
+			position: relative
+			&:before
+				content: ""
+				margin-right: 5px
+				position: absolute
+				left: 0
+				top: 50%
+				margin-top: -19px
+				+s($s-arr)
+		.tab__link-descr
+			margin-left: 48px
+			display: none
+			color: #666
+			font-weight: 100 
+			line-height: 1.4 
+	.tab__content
+		display: table-cell
+		padding-left: 80px
+		vertical-align: middle
+	.tab__content-descr
+		margin-top: 40px
+		font-size: 0
+		color: #666
+		li
+			width: 50%
+			display: inline-block
+			vertical-align: middle
+			font-size: 14px
+		i
+			margin-right: 5px
+			display: inline-block
+			vertical-align: middle
+		p
+			display: inline-block
+			vertical-align: middle
+			width: 190px
+			padding-right: 35px
+// SECTION 4
+// ===============================================
+#section3
+	height: 100%
+	background: linear-gradient(139deg, rgba(244,244,244,1) 0%, rgba(244,244,244,1) 50%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%, rgba(244,244,244,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%)
+
+.covering
+	padding-top: 66px
+	.covering-media
+		width: 100%
+		height: 440px
+		margin: 0 auto 20px
+		position: relative
+		&:before
+			content: ""
+			+arrow(40,40, #f4f4f4, tl)
+			position: absolute
+			top: 0
+			left: 0
+	.covering-media-img
+		width: 100%
+		height: 440px
+		+cover
+		overflow: hidden
+	.covering-media-descr
+		width: 200px
+		padding: 0 20px
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		background: rgba(#028cd2, .65)
+		text-align: left
+		.covering-media-descr-title
+			padding-top: 70px
+			margin-bottom: 35px
+			font-size: 30px
+			text-transform: uppercase
+			font-weight: 300 
+		.covering-media-descr-content
+			font-size: 14px
+			line-height: 1.4 
+			font-weight: 100
+.covering-note
+	font-family: "Myriad Pro", arial, helvetica, sans-serif
+	font-size: 14px
+	color: #666
+	text-align: left
+	padding-left: 24px
+	margin-bottom: 15px
+.covering-list
+	text-align: left
+	+clr
+	.covering-list-item
+		float: left
+		width: 200px
+		height: 40px
+		line-height: 40px
+		margin-left: 45px
+		background: #f4f4f4
+		position: relative
+		cursor: pointer
+		&.is-active, &:hover 
+			background: #028cd2
+			.covering-list-title  
+				color: #FFF
+		&:first-child
+			margin-left: 24px
+		.covering-list-first
+			position: absolute
+			top: 0
+			left: 0
+			+s($s-img111)
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				display: inline-block
+				+arrow(10,10, #f4f4f4, tl)
+		.covering-list-second
+			position: absolute
+			top: 0
+			left: 0
+			+s($s-img112)
+		.covering-list-third
+			position: absolute
+			top: 0
+			left: 0
+			+s($s-img113)
+		.covering-list-title
+			padding-left: 80px
+			display: inline-block
+			vertical-align: middle
+			color: #666
+
+.tel
+	display: none
+	height: 26px
+	line-height: 26px
+	margin-top: 20px
+	margin-right: 12px
+	font-size: 12px
+	color: #666
+
+
+// @for $i from 0 through 100
+// 	li[style='background-image: url(photos_min/#{$i}.jpg)']
+// 		opacity: 1 - $i / 100
+
+@for $i from 0 through 79
+	li[style='background-image: url(photos_min/#{$i}.jpg)']
+		opacity: 1
+		z-index: 101
+
+@for $i from 79 through 179
+	li[style='background-image: url(photos_min/#{$i}.jpg)']
+		opacity: 1.79 - $i / 100
+		z-index: 280 - $i
+
+@for $i from 0 through 79
+	li[style='background-image: url(photos/#{$i}.jpg)']
+		opacity: 1
+		z-index: 101
+		
+
+@for $i from 79 through 179
+	li[style='background-image: url(photos/#{$i}.jpg)']
+		opacity: 1.79 - $i / 100
+		z-index: 280 - $i
+
+
+.video-descr
+	position: absolute
+	top: 50%
+	left: 50%
+	width: 600px
+	height: 150px
+	line-height: 200px
+	display: inline-block
+	vertical-align: middle 
+	margin-top: -75px
+	margin-left: -300px
+	z-index: 102
+	&:before
+		content: ""
+		width: 200px
+		height: 1px
+		background: #666
+		position: absolute
+		top: -40px
+		left: 362px
+		z-index: 999
+		transform: rotate(-45deg)
+	&:after
+		content: ""
+		width: 200px
+		height: 1px
+		background: #666
+		position: absolute
+		bottom: -100px
+		right: 325px
+		z-index: 999
+		transform: rotate(-45deg)
+	.video-descr-in
+		line-height: 1.2
+		display: inline-block
+		vertical-align: middle 
+	.video-descr-title
+		margin-bottom: 15px
+		color: #666
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 300 
+	.video-descr-mote
+		font-size: 14px
+		color: #666
+		font-weight: 100 
+
+// SECTION 5
+// ===============================================
+#section4
+	background: rgba(#008bd2, .55) !important
+.bowls
+	height: 100%
+	position: relative
+	.bowls-descr
+		width: 600px
+		position: absolute
+		top: 110px
+		left: 50%
+		margin-left: -300px
+		text-align: center
+		.bowls-descr-title
+			margin-bottom: 5px
+			font-size: 30px
+			font-weight: 300
+			text-transform: uppercase
+			color: #fff
+		.bowls-descr-content
+			font-size: 14px
+			font-weight: 100
+			color: #fff
+	.bowls-dotted
+		display: none
+		+s($s-dotted)
+		position: absolute
+		left: 50%
+		margin-left: -27px
+		bottom: 40px
+	.bowls-media
+		height: 100%
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: -1
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: rgba(#008bd2, .55) !important
+		.bowls-media-item
+			display: none
+			width: 100% 
+			height: 100%
+			+cover
+			&.is-active
+				display: block
+	.bowls-items
+		width: 80%
+		display: table
+		table-layout: fixed
+		margin: 0 auto
+		padding-top: 100px
+	.bowls-item
+		display: table-cell
+		vertical-align: middle
+		cursor: pointer
+		text-align: center
+		&.is-active
+			.bowls-item-media
+				display: inline-block
+			.bowls-item-btn
+				display: block
+			.bowls-item-name
+				line-height: 1.2 
+		// &:hover, &.is-active
+		// 	background: red
+		&.m-riverina
+			.bowls-item-media
+				+s($s-riverina)
+			.bowls-item-name
+				padding-left: 15px
+		&.m-xtrainer
+			.bowls-item-media
+				+s($s-xtrainer)
+			.bowls-item-name
+				padding-left: 20px
+		&.m-java
+			.bowls-item-media
+				+s($s-java)
+			.bowls-item-name
+				padding-left: 5px
+		&.m-vogue
+			.bowls-item-media
+				+s($s-vogue)
+			.bowls-item-name
+				padding-left: 25px
+		&.m-briliant
+			.bowls-item-media 
+				+s($s-briliant)
+			.bowls-item-name
+				padding-left: 10px
+		.bowls-item-media
+			display: none
+		.bowls-item-name
+			margin-bottom: 8px
+			line-height: 270px
+			font-size: 14px
+			font-weight: 300  
+			color: #FFF
+			text-transform: uppercase
+		.bowls-item-btn
+			display: none
+			margin: 10px auto 0 
+			// margin-left: 65px
+			+s($s-btn)
+			transition: 0.2s linear
+			&:hover
+				opacity: 0.8 
+	.bowls-note
+		position: absolute
+		bottom: 30px
+		right: 30px
+		font-size: 10px
+		color: #FFF
+
+.contact
+	display: none
+	width: 100%
+	height: 100%
+	background: url("../img/contact.jpg")
+	+cover
+	background-position: top left
+	position: absolute
+	top: 0
+	left: 0
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: #008bd2
+		z-index: 2260
+		opacity: 0.55
+	.contact-in
+		height: 100%
+		position: relative
+		z-index: 2290
+	.contact-title
+		margin-bottom: 20px
+		font-size: 30px
+		font-weight: 300
+		text-transform: uppercase
+	.contact-note
+		margin-bottom: 30px
+		font-weight: 100
+		font-size: 16px
+		p
+			margin-bottom: 2px
+	.contact-input-wrap
+		width: 233px
+		display: block
+		margin: 0 auto
+		position: relative
+		&:before
+			content: ""
+			+s($s-wrap-input)
+			position: absolute
+			top: 0
+			left: 0
+	.contact-input
+		width: 100%
+		margin: 0 auto 20px
+		padding: 10px 15px
+		display: block
+		background: transparent
+		box-sizing: border-box
+		// border: 1px solid #fff
+		border: 0
+		font-size: 16px
+		line-height: 18px
+		color: #fff
+		outline: none
+		position: relative
+		z-index: 9999 
+		+placeholder
+			font-size: 16px
+			line-height: 18px
+			color: #fff
+		&:focus
+			+placeholder
+				color: transparent 
+	.contact-btn
+		display: block 
+		margin: 0 auto 35px
+		+s($s-btn-large)
+		font-size: 0
+		transition: 0.2s linear
+		&:hover
+			opacity: 0.8 
+	.contact-tel
+		font-size: 16px
+		font-weight: 100
+
+.footer
+	width: 100%
+	height: 68px
+	background: #FFF
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 9999
+	+clr
+	.social
+		margin-top: 24px
+		float: left
+		+clr
+		.social-item
+			float: left
+			margin-left: 28px
+		.social-link
+			color: #000
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	.footer-dev
+		margin-top: 27px
+		margin-right: 25px
+		float: right
+		+s($s-footer-logo)
+		font-size: 0
+		color: #000
+	.footer-mobile-logo
+		display: none
+		float: left
+		+s($s-footer-mobile-logo)
+		margin-top: 20px
+		margin-left: 10px
+
+.slick-prev, .slick-next
+	display: none !important
+// MEDIA
+// ===============================================
++r(960px)
+	.menu-wrap
+		+clr
+	.logo
+		float: left
+	#menu
+		display: none
+	.tel
+		display: block
+		float: right
+	#section3
+		background: #FFF !important
+	.tab
+		width: 100%
+		.tab__content
+			display: none
+		.tab__link-descr
+			font-size: 14px
+		.tab__nav
+			display: block
+			margin-left: 20px
+			a
+				margin-bottom: 20px
+			.tab__link-title
+				margin-bottom: 10px
+			.tab__link-descr
+				width: 230px
+			li.is-active
+				.tab__link-mobile
+					display: block
+	.covering
+		.covering-list
+			// padding-bottom: 50px
+		.covering-media
+			&:before
+				content: none
+		.covering-media-img
+			margin-top: 200px
+		.covering-media-descr
+			top: -270px
+			width: 100%
+			height: 270px
+			box-sizing: border-box
+			background: rgba(#028cd2, 1)
+			.covering-media-descr-title
+				padding-top: 30px
+				margin-bottom: 10px
+				font-size: 24px
+		.covering-note
+			display: none
+		.covering-list
+			li
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 15px
+				float: none
+				&:first-child
+					margin-left: auto
+	.bowls
+		.bowls-descr
+			width: 310px
+			margin-left: -155px
+			top: 50px
+			.bowls-descr-title
+				font-size: 24px
+		.bowls-items
+			padding-top: 190px
+		.bowls-item
+			.bowls-item-media
+				display: inline-block
+		.bowls-dotted
+			display: block
+
++r(610px)
+	.video-descr
+		width: 300px
+		margin-left: -150px
+		height: 300px
+		margin-top: -150px
+		line-height: 300px
+		&:before
+			width: 150px
+			top: 10px
+			left: 195px
+		&:after
+			width: 150px
+			bottom: 0px
+			right: 215px
+
++r(480px)
+	.video-descr
+		.video-descr-title
+			font-size: 24px
+	.section2
+		.section2-media
+			display: none
+		.section2-media-mobile
+			display: block
+		.section2-descr
+			width: 300px
+			left: 20px
+		.section2-descr-title
+			font-size: 24px
+	.tab
+		.tab__nav
+			li.is-active
+				.tab__link-mobile
+					.tab__link-mobile-list
+						li
+							p
+								width: 190px
+	.footer
+		.social
+			display: none
+		.footer-mobile-logo
+			display: block
+	.contact
+		.contact-title
+			font-size: 24px
+		.contact-note
+			font-size: 14px
+
+
+	
+
+
