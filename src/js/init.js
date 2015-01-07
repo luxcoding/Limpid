@@ -11,7 +11,9 @@ head.load(
 
 
 	// "js/lib/jquery-ui.min.js",
-	"js/lib/jquery.fullPage.js",
+
+	// "js/lib/jquery.fullPage.js",
+
 	// "js/lib/iscroll.js",
 	
 

@@ -449,10 +449,11 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #fff;
+  overflow: auto !important;
 }
 
 body.overflow {
-  overflow: hidden !important;
+  overflow: auto !important;
 }
 
 a {
@@ -1722,6 +1723,10 @@ i.img42 {
   background-position: -135px -410px;
   width: 40px;
   height: 40px;
+}
+
+.section {
+  height: 500px !important;
 }
 
 .section2 {
