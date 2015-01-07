@@ -4,7 +4,7 @@ Ezhi = {}
 var scrollTop = 0;
 var frames = 379;
 var swipeKd = 0;
-var loader = new PxLoader(); 
+var loader = new PxLoader();
 var highResTimer = setTimeout(function () {
 }, 200);
 var testSpeed = 0;
@@ -18,14 +18,14 @@ $(document).ready(function () {
     var html = '';
     var domen = '';
     if (testSpeed == 1)
-        domen = 'http://labs.scaph.ru/ezhi/';
+        domen = 'http://luxcoding.github.io/Limpid/build/';
     for (var i = 1; i <= frames; i++) {
         html += '<li style="background-image: url(' + domen + 'photos_min/' + i + '.jpg)"></li>';
         loader.addImage(domen + 'photos_min/' + i + '.jpg');
         if (i == frames) {
             loader.addImage(domen + 'assets/i/back.jpg');
             loader.addImage(domen + 'assets/i/sprite.png');
-            loader.addImage(domen + 'assets/i/neo_logo_main_x2.png');
+            // loader.addImage(domen + 'assets/i/neo_logo_main_x2.png');
             loader.start();
         }
     }
