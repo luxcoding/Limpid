@@ -1,4 +1,4 @@
-head.ready(function() {
+// head.ready(function() {
  
   $(document).ready(function() {
     // scrolling site
@@ -136,4 +136,4 @@ head.ready(function() {
     $('.contact').fadeIn();
   });
 
-});
+// });
